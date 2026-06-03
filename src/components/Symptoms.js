@@ -1,6 +1,6 @@
 function Symptoms() {
   return (
-    <div className="symptoms">
+    <div className="symptoms" id="symptoms">
       <h2>Common Symptoms</h2>
 
       <div className="card-container">

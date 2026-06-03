@@ -48,6 +48,13 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #9d5c66;
+  transform: translateY(-2px);
 }
 
 .hero-image {

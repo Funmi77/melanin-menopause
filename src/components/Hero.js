@@ -14,7 +14,15 @@ function Hero() {
         Supporting you through perimenopause and menopause with clear, simple
         information.
       </p>
-      <button>Learn More</button>
+      <button
+        onClick={() =>
+          document
+            .getElementById("symptoms")
+            .scrollIntoView({ behavior: "smooth" })
+        }
+      >
+        Learn More
+      </button>
     </div>
   );
 }
