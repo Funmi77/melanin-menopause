@@ -50,6 +50,12 @@ button {
   cursor: pointer;
 }
 
+.hero-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
 .symptoms {
   text-align: center;
   padding: 60px 20px;
@@ -90,6 +96,26 @@ button {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 28px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      padding: 0 10px;
+    }
+
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      width: 80%;
+    }
+  }
 }
 
 .card {

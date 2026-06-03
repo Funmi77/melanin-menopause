@@ -1,7 +1,15 @@
+import heroImage from "../images/hero-image.jpg";
+
 function Hero() {
   return (
     <div className="hero">
-      <h2>Understanding Menopause in Black Women</h2>
+      <img
+        src={heroImage}
+        alt="Black woman wellness and self-care"
+        className="hero-image"
+      />
+
+      <h1>Understanding Menopause in Black Women</h1>
       <p>
         Supporting you through perimenopause and menopause with clear, simple
         information.
