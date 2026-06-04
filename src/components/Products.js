@@ -1,6 +1,6 @@
 function Products() {
   return (
-    <div className="products" id="products">
+    <div className="products section" id="products">
       <h2>Product Concepts</h2>
 
       <div className="card-container">

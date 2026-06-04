@@ -2,7 +2,7 @@ import heroImage from "../images/hero-image.jpg";
 
 function Hero() {
   return (
-    <div className="hero" id="home">
+    <div className="hero section" id="home">
       <img
         src={heroImage}
         alt="Black woman wellness and self-care"
