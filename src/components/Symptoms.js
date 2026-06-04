@@ -1,7 +1,7 @@
 function Symptoms() {
   return (
     <div className="symptoms section" id="symptoms">
-      <h2>Common Symptoms</h2>
+      <h2>Symptoms You May Experience</h2>
 
       <div className="card-container">
         <div className="card">Body Odour Changes</div>

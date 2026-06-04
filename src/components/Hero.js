@@ -11,8 +11,8 @@ function Hero() {
 
       <h1>Understanding Menopause in Black Women</h1>
       <p>
-        Supporting you through perimenopause and menopause with clear, simple
-        information.
+        A simple, supportive space to help you understand perimenopause and
+        menopause symptoms, especially those often overlooked in Black women.
       </p>
       <button
         onClick={() =>
@@ -21,7 +21,7 @@ function Hero() {
             .scrollIntoView({ behavior: "smooth" })
         }
       >
-        Learn More
+        Explore Symptoms
       </button>
     </div>
   );
