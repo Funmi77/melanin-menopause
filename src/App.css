@@ -44,6 +44,9 @@ button {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
 
   .card:hover {
     transform: translateY(-5px);
@@ -87,6 +90,18 @@ p {
   line-height: 1.6;
 }
 
+.footer {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f7f2f3;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 5px 0;
+  color: #555;
+}
+
 .hero {
   text-align: center;
   padding: 80px 20px;
@@ -94,6 +109,7 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  background-color: #fff;
 }
 
 .hero h1 {
@@ -140,18 +156,6 @@ p {
   padding: 0 10px;
 }
 
-.footer {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #f7f2f3;
-  margin-top: 40px;
-}
-
-.footer p {
-  margin: 5px 0;
-  color: #555;
-}
-
 .logo {
   color: #b76e79;
 }
@@ -188,6 +192,7 @@ p {
 .products {
   text-align: center;
   padding: 60px 20px;
+  background-color: #fff;
 }
 
 .products h2 {
@@ -198,6 +203,7 @@ p {
 .symptoms {
   text-align: center;
   padding: 60px 20px;
+  background-color: #faf7f8;
 }
 
 .symptoms h2 {
@@ -208,4 +214,6 @@ p {
 .section {
   padding: 80px 20px;
   text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
