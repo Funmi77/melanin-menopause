@@ -1,14 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f7f2f3;
   font-family: Arial, sans-serif;
 }
 
-h1 {
+h1,
+h2 {
   color: #b76e79;
   text-align: center;
 }
 
 p {
+  color: #555;
+  line-height: 1.6;
   text-align: center;
 }
 
@@ -20,6 +27,64 @@ button {
   color: white;
   border: none;
   border-radius: 8px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 28px;
+    }
+
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      width: 80%;
+    }
+  }
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #b76e79;
+}
+
+h1,
+h2 {
+  color: #b76e79;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
 }
 
 .hero {
@@ -70,79 +135,11 @@ button {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.symptoms {
-  text-align: center;
-  padding: 60px 20px;
+.hero p {
+  font-size: 16px;
+  padding: 0 10px;
 }
 
-.symptoms h2 {
-  color: #b76e79;
-  margin-bottom: 30px;
-}
-
-.card-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: #fff;
-  padding: 20px;
-  width: 180px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
-}
-.products {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.products h2 {
-  color: #b76e79;
-  margin-bottom: 30px;
-}
-
-.card-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-
-  @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 28px;
-    }
-
-    .hero p {
-      font-size: 16px;
-      padding: 0 10px;
-    }
-
-    .card-container {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .card {
-      width: 80%;
-    }
-  }
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  width: 220px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card h3 {
-  color: #b76e79;
-}
 .footer {
   text-align: center;
   padding: 50px 20px;
@@ -155,13 +152,60 @@ button {
   color: #555;
 }
 
-.links {
-  margin-top: 15px;
+.logo {
+  color: #b76e79;
 }
 
-.links a {
-  margin: 0 10px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
   text-decoration: none;
-  color: #b76e79;
+  color: #555;
   font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #b76e79;
+  transition: 0.3sec ease;
+}
+
+.products {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.products h2 {
+  color: #b76e79;
+  margin-bottom: 30px;
+}
+
+.symptoms {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.symptoms h2 {
+  color: #b76e79;
+  margin-bottom: 30px;
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
 }
